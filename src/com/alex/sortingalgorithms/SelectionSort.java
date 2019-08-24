@@ -11,19 +11,20 @@ public class SelectionSort {
         selectionSort(array);
 
         AlgoHelper.printArray(array);
-
     }
 
     private static void selectionSort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
 
-            int largest = 0;
+            int largestElementIndex = 0;
+
             for (int i = 0; i <= lastUnsortedIndex; i++) {
-                if (array[i] > array[largest]) {
-                    largest = i;
+                if (array[i] > array[largestElementIndex]) {
+                    largestElementIndex = i;
                 }
             }
-            swap(array, largest, lastUnsortedIndex);
+
+            swap(array, largestElementIndex, lastUnsortedIndex);
         }
     }
 
@@ -31,7 +32,6 @@ public class SelectionSort {
         if (i == j) {
             return;
         }
-        System.out.println("Swapping i---" + i + " j---" + j);
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
