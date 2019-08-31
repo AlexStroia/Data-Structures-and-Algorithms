@@ -27,7 +27,7 @@ public class QuickSort {
 
         while (i < j) {
             //empty loop
-            while (i < j && input[--j] >= pivot) ;
+            while (i < j && input[--j] >= pivot);
             if (i < j) {
                 input[i] = input[j];
             }
