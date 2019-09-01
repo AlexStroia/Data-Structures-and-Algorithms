@@ -22,8 +22,7 @@ public class CountSort {
         int j = 0;
         for (int i = min; i <= max; i++) {
             while (countingArray[i - min] > 0) {
-                input[j] = i;
-                j++;
+                input[j++] = i;
                 countingArray[i - min]--;
             }
         }
