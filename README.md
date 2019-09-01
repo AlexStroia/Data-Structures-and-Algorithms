@@ -10,4 +10,5 @@ Sorting Algorithms
 * Selection Sort
 * MergeSort
 * QuickSort 
+* CoutingSort
 * To be continue!
