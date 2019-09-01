@@ -5,7 +5,7 @@ import com.alex.AlgoHelper;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] input = {3, 6, 4, 5};
+        int[] input = {3, 4, 6, 8,2};
         quickSort(input, 0, input.length);
         AlgoHelper.printArray(input);
     }
@@ -21,7 +21,9 @@ public class QuickSort {
 
     private static int partition(int[] input, int start, int end) {
 
+        System.out.println("Partition called");
         int pivot = input[start];
+        System.out.println("Pivot" + pivot);
         int i = start;
         int j = end;
 
