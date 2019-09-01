@@ -21,6 +21,7 @@ public class CountSort {
 
         int j = 0;
         for (int i = min; i <= max; i++) {
+            //Check if the value stored in the counting array is greater than 0
             while (countingArray[i - min] > 0) {
                 input[j] = i;
                 j++;
