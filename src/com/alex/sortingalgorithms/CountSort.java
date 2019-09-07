@@ -27,7 +27,6 @@ public class CountSort {
                 j++;
                 countingArray[i - min]--;
             }
-
         }
     }
 }
