@@ -12,11 +12,3 @@ Sorting Algorithms
 * QuickSort 
 * CoutingSort
 * RadixSort
-
-*To be continue!
-
-
-
-Data Structures
----------------------
-* To be continue!
